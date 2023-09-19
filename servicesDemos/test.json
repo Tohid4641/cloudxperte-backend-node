@@ -1,0 +1,41 @@
+{
+    "CostCalculationSkillList": [
+      {
+        "Skill": "iOS",
+        "CostCalculationJobsList": [
+          {
+            "JobTitle": "Technical lead- iOS",
+            "HourlyCost": 986.02,
+            "Cost": 2050882
+          },
+          {
+            "JobTitle": "Sr. iOS Developer",
+            "HourlyCost": 834.32,
+            "Cost": 1735404
+          }
+        ]
+      },
+      {
+        "Skill": "react",
+        "CostCalculationJobsList": [
+          {
+            "JobTitle": "Technical lead- react",
+            "HourlyCost": 886.02,
+            "Cost": 2150882
+          },
+          {
+            "JobTitle": "Sr. reactjs Developer",
+            "HourlyCost": 734.32,
+            "Cost": 1835404
+          }
+        ]
+      }
+    ],
+    "Duration": 52,
+    "TotalApproximateCost": 3786286,
+    "CurrencyCode": null,
+    "CurrencySymbol": null,
+    "UserID": 0,
+    "IsCallSuccessful": true,
+    "Message": "Call Successfull"
+  }

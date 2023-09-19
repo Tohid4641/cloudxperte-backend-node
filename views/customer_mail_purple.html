@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body
+    style="font-family: Overpass, sans-serif;box-sizing: border-box;padding: 0;margin:0;">
+    <div class="main-container" style="padding:50px;padding-top:0px">
+      <div>
+        <div>
+          <img
+            src="../template_icons/probytes_logo.svg" alt="Creating Email Magic" width="150"/>
+          <img src="../template_icons/header_band.svg" alt="Creating Email Magic" style="float: right" height="75" />
+        </div>
+      </div>
+
+      <div class="pg-title" style="text-align: right">
+        <h2>MOBILE APP COST CALCULATOR</h2>
+      </div>
+
+      <div style="border-top: 2px solid #491C61"></div>
+      <div style="text-align: center">
+        <img src="../template_icons/center_icon.png" style="width: 550px; margin-top: 20px" alt="image" />
+      </div>
+
+      <div style="margin-top: 20px; border-bottom: 1px solid #eeeeee">
+        <h2 class="heading" style="text-align: center; color: #491C61">
+          Greetings!
+        </h2>
+        <p style="font-size: 14px;line-height: 25px;padding: 1px 20px;font-weight: 600;">
+          Dear ${data.user_name},
+        </p>
+        <p style="font-size: 14px;line-height: 25px;padding: 1px 20px;font-weight: 500;">
+          Thank you for trusting us to help you find a solution. Please find
+          below a high-level Effort and Cost estimation based on your
+          preferences.
+        </p>
+      </div>
+
+      <div style="border-bottom: 2px solid #eeeeee">
+        <h2 style="text-align: center;margin: 20px 0;font-size: 20px;font-weight: 600;">
+          Application Specifications
+        </h2>
+      </div>
+
+      <div style="border-bottom: 1px solid #eeeeee">
+        <table
+          width="100%"
+          cell-spacing="0"
+          cell-padding="0"
+          border-collapse:collapse;>
+          <thead>
+            <tr style="background-color: #491C61; color: #ffffff">
+              <th style="text-transform: uppercase; padding: 10px; color: #ffffff">
+                App Specifications
+              </th>
+              <th style="text-transform: uppercase; padding: 10px; color: #ffffff">
+                User Preferences
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: center; padding: 10px">
+                Application Category
+              </td>
+              <td style="text-align: center; padding: 10px">${data.step1_domain_data}</td>
+            </tr>
+            <tr>
+              <td style="text-align: center; background: #f7f7f7; padding: 10px">
+                Platforms Selected
+              </td>
+              <td style="text-align: center; background: #f7f7f7; padding: 10px">${dis_platform}</td>
+            </tr>
+            <tr>
+              <td style="text-align: center; padding: 10px">Admin Panel</td>
+              <td style="text-align: center; padding: 10px">Yes</td>
+            </tr>
+            <tr>
+              <td style="text-align: center; background: #f7f7f7; padding: 10px">
+                Web Application
+              </td>
+              <td style="text-align: center; background: #f7f7f7; padding: 10px">
+              ${web_application}
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center; padding: 10px">Secondary App</td>
+              <td style="text-align: center; padding: 10px">
+              ${secd_app_names}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="border-bottom: 2px solid #eeeeee">
+        <h2 style="text-align: center;margin: 20px;font-size: 20px;font-weight: 600;">
+          App Version Specifications
+        </h2>
+      </div>
+      <div style="border-bottom: 1px solid #eeeeee">
+        <table
+          width="100%"
+          cell-spacing="0"
+          cell-padding="0"
+          border-collapse:collapse;>
+          <thead>
+            <tr style="background-color: #491C61; color: #ffffff">
+              <th style="text-transform: uppercase; padding: 10px; color: #ffffff">
+                App Version Specifications
+              </th>
+              <th style="text-transform: uppercase; padding: 10px; color: #ffffff">
+                Android
+              </th>
+              <th style="text-transform: uppercase; padding: 10px; color: #ffffff">
+                iOS
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: center; padding: 10px">Latest Version</td>
+              <td style="text-align: center; padding: 10px">11.0</td>
+              <td style="text-align: center; padding: 10px">14</td>
+            </tr>
+            <tr>
+              <td style="text-align: center; background: #f7f7f7; padding: 10px">
+                Backward Compatibility
+              </td>
+              <td style="text-align: center; background: #f7f7f7; padding: 10px">
+                6.0
+              </td>
+              <td style="text-align: center; background: #f7f7f7; padding: 10px">
+                12
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center; padding: 10px">Screen Sizes</td>
+              <td style="text-align: center; padding: 10px">5.0 -> 6.9</td>
+              <td style="text-align: center; padding: 10px">4.7 -> 6.5</td>
+            </tr>
+            <tr>
+              <td style="text-align: center; background: #f7f7f7; padding: 10px">
+                Minimum SDK Version
+              </td>
+              <td style="text-align: center; background: #f7f7f7; padding: 10px">
+                Marshmallow - Version-6
+                <br />API Level -23
+              </td>
+              <td style="text-align: center; background: #f7f7f7; padding: 10px">
+                -
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center; padding: 10px">
+                Maximum SDK Version
+              </td>
+              <td style="text-align: center; padding: 10px">
+                Android 11 - Version-11 <br />
+                API Level -30
+              </td>
+              <td style="text-align: center; padding: 10px">-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="background-color: #f7f7f7;padding: 30px;margin-top: 20px;text-align: center;">
+        <h4 style="font-weight: bold;margin-top: 0;font-size: 24px;margin-bottom: 5px;">
+          Grand Cost
+        </h4>
+        <h2 style="margin-top: 0;margin-bottom: 5px;color: #491C61;font-size: 30px;letter-spacing: 3px;font-weight: 400;">
+          ${Math.round(amt_convertd)} ${conversion_data.currency_name}
+        </h2>
+        <p style="margin-top: 0; margin-bottom: 30px">
+          If this is a bit unexpected, we are keen to help you to reduce this cost, Please answer few more questions.
+        </p>
+        <div style="text-align: center">
+          <div style="height: 56px;line-height: 56px;border: 2px solid #491C61;background: #f7f7f7;">
+            <span class="cx-ttext" style="font-weight: 600; display: block; font-size: 20px">TIMELINE ${Math.round(timeline_val)} Months (approx.)</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center;font-size: 20px;font-weight: bold;padding-top: 20px;padding-bottom: 20px;">
+        Cost Breakups
+      </div>
+
+      <div style="background-color: #f7f7f7;box-sizing: border-box;box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);height: 60px;">
+        <div style="padding: 12px 25px;">
+          <div style="width: 10%; float: left">
+            <img
+              src="../template_icons/shopping_cart.svg"
+            />
+          </div>
+          <div style="width: 90%; float: right">
+            <div style="font-size: 20px; font-weight: bold">${data.step1_domain_data}</div>
+            <div style="font-size: 12px; color: #491C61; font-weight: bold">
+            ${Math.round(grandTotalEfforts)} Hours
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 15px; display: flex">
+        <div style="width: 10%">
+          <img
+            src="../template_icons/Circle.svg"
+            style="padding-left: 25px; margin-top: 25px"
+          />
+        </div>
+        <div style="background-color: #f7f7f7;box-sizing: border-box;box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);height: 60px;width: 90%;float: right;">
+          <div style="padding: 12px 25px; display: flex" width="100%">
+            <div style="width: 10%">
+              <img
+                src="../template_icons/screen_design.svg"
+                style="margin-top: 10px"
+              />
+            </div>
+
+            <div style="width: 90%">
+              <div style="font-size: 20px; font-weight: bold">
+                Screen Design
+              </div>
+              <div style="font-size: 12px; color: #491C61; font-weight: bold">
+              ${uiscreenhrs} hrs
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 15px; display: flex">
+        <div style="width: 10%">
+          <img
+            src="../template_icons/Circle.svg"
+            style="padding-left: 25px; margin-top: 25px"
+          />
+        </div>
+        <div style="background-color: #f7f7f7;box-sizing: border-box;box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);height: 60px;width: 90%;float: right;">
+          <div style="padding: 12px 25px; display: flex" width="100%">
+            <div style="width: 10%">
+              <img
+                src="../template_icons/frontend.svg"
+                style="margin-top: 10px"
+              />
+            </div>
+            <div style="width: 90%">
+              <div style="font-size: 20px; font-weight: bold">Front End</div>
+              <div style="font-size: 12px; color: #491C61; font-weight: bold">
+                ${Math.round(frontend_total_hrs)} hrs
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="http://cdn.mcauto-images-production.sendgrid.net/975370a36813dc8d/22d7d05a-5e2b-4a5a-bc46-48680e2d5902/7x26.png"
+          style="padding: 0 0 0 60%"
+        />
+      </div>
+
+      <div style="margin-top: 0; display: flex">
+        <div style="width: 10%">
+          <span style="padding-left: 25px; margin-top: 25px"></span>
+        </div>
+        <div style="background-color: #f7f7f7;box-sizing: border-box;box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);height: auto;width: 90%;">
+          <div style="padding: 12px 25px" width="100%">
+            <div style="width: 33%;float: left;text-align: center;border-right: 1px solid #eeeeee;">
+              <img
+                src="../template_icons/android.svg"
+                style="margin-top: 10px"
+              />
+              <div style="font-size: 14px; font-weight: 700">Android</div>
+              <div style="font-size: 12px; color: #491C61; font-weight: 600">
+                ${Math.round(frontend_android_hrs)} hrs
+              </div>
+            </div>
+            <div style="width: 33%; float: right; text-align: center">
+              <img
+                src="../template_icons/website.svg"
+                style="margin-top: 10px"
+              />
+              <div style="font-size: 14px; font-weight: 700">Web App</div>
+              <div style="font-size: 12px; color: #491C61; font-weight: 600">
+                ${Math.round(frontend_web_hrs)} hrs
+              </div>
+            </div>
+            <div style="width: 33%;float: right;text-align: center;border-right: 1px solid #eeeeee;">
+              <img
+                src="../template_icons/apple.svg"
+                style="margin-top: 10px"
+              />
+              <div style="font-size: 14px; font-weight: 700">iOS</div>
+              <div style="font-size: 12px; color: #491C61; font-weight: 600">
+                ${Math.round(frontend_ios_hrs)} hrs
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 0px">
+        <img
+          src="http://cdn.mcauto-images-production.sendgrid.net/975370a36813dc8d/22d7d05a-5e2b-4a5a-bc46-48680e2d5902/7x26.png"
+          style="padding: 0 0 0 60%"
+        />
+      </div>
+
+      <div style="margin-top: 0px; display: flex">
+        <div style="width: 10%"></div>
+        <div style="background-color: #f7f7f7;box-sizing: border-box;box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);width: 90%;">
+          <div style="padding: 12px 25px" width="100%">
+            <div width="100%">
+              <div style="text-align: right; padding: 0 10px">
+                <h5 style="background: #595856;color: #ffffff;text-align: center;padding-top: 10px;padding-bottom: 10px;">
+                  Feature List
+                </h5>
+              </div>
+              <div style="text-align: left; padding: 0 10px">
+                <ul style="list-style-type:disc;">${modular_list_full}</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 15px; display: flex">
+        <div style="width: 10%">
+          <img
+            src="../template_icons/Circle.svg"
+            style="padding-left: 25px; margin-top: 25px"
+          />
+        </div>
+        <div style="background-color: #f7f7f7;box-sizing: border-box;box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);height: 60px;width: 90%;">
+          <div style="padding: 12px 25px; display: flex" width="100%">
+            <div style="width: 10%">
+              <img
+                src="../template_icons/web_services.svg"
+                style="margin-top: 10px"
+              />
+            </div>
+            <div style="width: 90%">
+              <div style="font-size: 20px; font-weight: bold">Backend</div>
+              <div style="font-size: 12px; color: #491C61; font-weight: bold">
+                ${backend_hrs} hrs
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 0px">
+        <img
+          src="http://cdn.mcauto-images-production.sendgrid.net/975370a36813dc8d/22d7d05a-5e2b-4a5a-bc46-48680e2d5902/7x26.png"
+          style="padding: 0 0 0 60%"
+        />
+      </div>
+
+      <div style="margin-top: 0px; display: flex">
+        <div style="width: 10%">
+          <span style="padding-left: 25px; margin-top: 25px"></span>
+        </div>
+        <div style="background-color: #f7f7f7;box-sizing: border-box;box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);height: auto;width: 90%;">
+          <div style=" display: flex" width="100%">
+            <div style="width: 33%;text-align: center;border-right: 1px solid #eeeeee;">
+              <img
+                src="../template_icons/web_service_circle.svg"
+                style="margin-top: 10px"
+              />
+              <div style="font-size: 14px; font-weight: 700">Web Services</div>
+              <div style="font-size: 12px; color: #491C61; font-weight: 600">
+                ${Math.round(webservices_hrs)} hrs
+              </div>
+            </div>
+            <div style="width: 33%; text-align: center;border-right: 1px solid #eeeeee;">
+              <img
+                src="../template_icons/database_icon.svg"
+                style="margin-top: 10px"
+              />
+              <div style="font-size: 14px; font-weight: 700">Database</div>
+              <div style="font-size: 12px; color: #491C61; font-weight: 600">
+                ${Math.round(database_hrs)} hrs
+              </div>
+            </div>
+            <div style="width: 33%;text-align: center;border-right: 1px solid #eeeeee;">
+                <img
+                  src="../template_icons/administrator.svg"
+                  style="margin-top: 10px"
+                />
+              <div style="font-size: 14px; font-weight: 700">Admin Panel</div>
+              <div style="font-size: 12px; color: #491C61; font-weight: 600">
+                ${Math.round(admin_panel_hrs)} hrs
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 0px">
+        <img
+          src="http://cdn.mcauto-images-production.sendgrid.net/975370a36813dc8d/22d7d05a-5e2b-4a5a-bc46-48680e2d5902/7x26.png"
+          style="padding: 0 0 0 60%"
+        />
+      </div>
+
+      <div style="margin-top: 0px; display: flex">
+        <div style="width: 10%">
+          <span style="padding-left: 25px; margin-top: 25px"></span>
+        </div>
+        <div style="background-color: #f7f7f7;box-sizing: border-box;box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);width: 90%;padding: 0;">
+          <div  style="float: left;width: 50%">
+            <div style="text-align: left; padding: 0 10px">
+              <h5 style="background: #595856;color: #ffffff;text-align: center;padding: 10px 30px;">
+                Basic Features
+              </h5>
+            </div>
+            <div style="text-align: left; padding: 0 10px">
+              <ul>
+                ${adminpanel_list_basic}
+              </ul>
+            </div>
+          </div>
+
+          <div  style="float: left;width: 50%">
+            <div style="text-align: left; padding: 0 10px">
+              <h5 style="background: #595856;color: #ffffff;text-align: center;padding: 10px 30px;">
+                Advance Features
+              </h5>
+            </div>
+            <div style="text-align: left; padding: 0 10px">
+              <ul>
+                ${adminpanel_list_advance}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 0px">
+        <div style="float: left; width: 10%">
+          <img
+            src="../template_icons/Circle.svg"
+            style="padding-left: 25px; margin-top: 25px"
+          />
+        </div>
+        <div style="background-color: #f7f7f7;box-sizing: border-box;box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);height: 60px;width: 90%;float: right;">
+          <div style="padding: 12px 25px" width="100%">
+            <div style="width: 10%; float: left">
+              <img
+                src="../template_icons/mobile.svg"
+                style="margin-top: 10px"
+              />
+            </div>
+            <div style="width: 90%; float: right">
+              <div style="font-size: 20px; font-weight: bold">
+                Secondary Apps
+              </div>
+              <div style="font-size: 12px; color: #491C61; font-weight: bold">
+                ${Math.round(data.secondary_app_estimation + data.tertiary_app_estimation)} hrs
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 0px">
+        <img
+          src="http://cdn.mcauto-images-production.sendgrid.net/975370a36813dc8d/22d7d05a-5e2b-4a5a-bc46-48680e2d5902/7x26.png"
+          style="padding: 0 0 0 60%"
+        />
+      </div>
+
+      <div style="margin-top: 0px">
+        <div style="float: left; width: 10%">
+          <span style="padding-left: 25px; margin-top: 25px"></span>
+        </div>
+        <div style="background-color: #f7f7f7;box-sizing: border-box;box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);height: auto;width: 90%;float: left;">
+          <div style="padding: 12px 25px" width="100%">${output}</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 0px">
+        <img
+          src="http://cdn.mcauto-images-production.sendgrid.net/975370a36813dc8d/22d7d05a-5e2b-4a5a-bc46-48680e2d5902/7x26.png"
+          style="padding: 0 0 0 60%"
+        />
+      </div>
+
+      ${secondary_app_modular_list}
+
+      <div style="background-color: #f7f7f7;padding: 30px;margin-top: 20px;text-align: center;">
+        <h4 style="font-weight: 600;margin-top: 0;font-size: 24px;margin-bottom: 5px;">
+          Grand Total
+        </h4>
+        <h2 style="margin-top: 0;margin-bottom: 5px;font-size: 30px;letter-spacing: 3px;font-weight: 400;color: #491C61;">
+          ${Math.round(amt_convertd)} ${conversion_data.currency_name}
+        </h2>
+        <p style="margin-top: 0; margin-bottom: 30px">
+          If this is a bit unexpected, we are keen to help you to reduce this
+          cost, Please answer a few more questions.
+        </p>
+      </div>
+
+      <div style="text-align: center">
+        <p style="margin: 30px 0">Try With Our Cost Calculator App</p>
+        <span>
+          <a href="https://play.google.com/store/apps/details?id=com.redbytes.projectcostcalculator&hl=en&gl=US">
+            <img
+              src="http://cdn.mcauto-images-production.sendgrid.net/975370a36813dc8d/653dbb03-fb0f-4e75-a95a-c149526d95bb/5436x1604.png"
+              style="height: 60px; width: 200px"
+            />
+          </a>
+        </span>
+        <span>
+          <a href="https://apps.apple.com/gb/app/cost-calculator/id1482880672">
+            <img
+              src="http://cdn.mcauto-images-production.sendgrid.net/975370a36813dc8d/4f466f9c-90d6-4259-87df-ddf9a8bb2872/1990x590.png"
+              style="height: 60px; width: 200px"
+            />
+          </a>
+        </span>
+
+        <p style="text-align: center; margin: 30px 0">
+          We hope this estimate is to your satisfaction and offers a
+          comprehensive picture. For any further queries, we would be happy to
+          respond at
+        </p>
+      </div>
+
+      <div style="text-align: center; margin-top: 20px;">
+        <table style="width: 100%">
+          <tr>
+            <td style="" valign="bottom">
+              <img
+                src="../template_icons/www_logo.svg"
+                style="margin-bottom: -9px;"/>
+              <span style="margin-left: 5px;">www.redbytes.in</span>
+            </td>
+
+            <td>
+              <img
+              src="../template_icons/whatsapp_logo.png"
+              style="margin-bottom: -9px;"/>
+              <span style="margin-left: 5px;">+91 8113 869 000</span>
+            </td>
+
+            <td>
+              <img
+              src="../template_icons/calling.svg"
+              style="margin-bottom: -9px;"/>
+            <span style="margin-left: 5px;">+1 9295521900</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <h2 style="text-align: center;margin-top: 50px;margin-bottom: 10px;font-size: 20px;font-weight: bold;">
+          More About App Development
+        </h2>
+      </div>
+
+      <div style="box-sizing: border-box;box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);width: 100%;">
+        <div width="100%" style="display: flex; justify-content: center;">
+          <div style="width: 40%;text-align: center;border: 1px solid #eeeeee;padding: 20px 0;">
+            <img
+              src="../template_icons/big_doller.svg"
+              style="margin-top: 10px; width: 26px"/>
+            <div style="font-size: 14px; font-weight: 700; margin-top: 10px">
+              How Much
+            </div>
+          </div>
+
+          <div style="width: 40%;text-align: center;border: 1px solid #eeeeee;padding: 20px 0;">
+            <img
+              src="../template_icons/setting.svg"
+              style="margin-top: 10px; width: 48px"
+            />
+            <div style="font-size: 14px; font-weight: 700; margin-top: 10px">
+              How To
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 50px">
+        <h2 style="color: #491C61; margin-top: 30px; margin-bottom: 0">
+          DISCLAIMER
+        </h2>
+        <p style="margin-top: 10px">
+          We have formulated this model based on Intelligent and Predictive
+          analytics and is honed by years of industry experience. We can assure
+          you that, based on your present preference, this estimate will be
+          about 70-80 % accurate
+        </p>
+        <span style="color: #491C61"
+          >Note: This email is generated from App Cost Calculator page -
+          Redbytes
+        </span>
+      </div>
+
+      <div style="margin-top: 20px" width="100%">
+        <div style="float: left; width: 50%">
+          <img
+            src="../template_icons/bottom_header.png"
+            alt="Creating Email Magic"
+            height="75"
+          />
+        </div>
+        <div style="float: right; width: 50%; text-align: right">
+          <div width="100%">
+            <div class="cx-atext" style="text-align: right;margin-right: 5px;float: left;width: 90%;">
+              <p style="margin: 0">125/2, Sainiketan Colony, kalas Road,</p>
+              <p style="margin: 0">Visharant Wadi,</p>
+              <p style="margin: 0">Pune, Maharashtra 411015.</p>
+            </div>
+            
+            <div width="10%" style="float: right">
+              <img
+                src="../template_icons/location_icon.svg"
+                style="padding-top: 15px"/>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div style="border-bottom: 2px solid #eeeeee; margin-top: 40px; clear: both;"></div>
+    </div>
+  </body>
+</html>
