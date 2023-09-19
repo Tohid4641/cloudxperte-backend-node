@@ -1,12 +1,12 @@
-# CloudXperte - Mobile App Development Tools
+# CloudXperte - App Development Cost Estimator
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Technologies Used](#technologies-used)
 - [Hire App Developer](#hire-app-developer)
-  - [Features](#hire-app-developer-features)
+  - [Summary](#hire-app-developer-summary)
 - [App Cost Calculator](#app-cost-calculator)
-  - [Features](#app-cost-calculator-features)
+  - [Summary](#app-cost-calculator-summary)
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
@@ -15,7 +15,7 @@
 - [Application URL](#application-url)
 
 ## Introduction
-CloudXperte offers two sections for mobile app development: **Hire App Developer** and **App Cost Calculator**. Whether you want to hire an app developer or estimate the cost of developing an application, CloudXperte has you covered. This tool leverages Node.js, Express.js, EJS, and MySQL to provide you with comprehensive solutions for your mobile app development needs.
+Welcome to CloudXperte's App Development Cost Estimator! This application comprises two sections: "Hire App Developer" and "App Cost Calculator." Whether you're looking to hire an app developer or estimate the cost of developing a mobile application, CloudXperte has you covered.
 
 ## Technologies Used
 - Node.js
@@ -24,20 +24,27 @@ CloudXperte offers two sections for mobile app development: **Hire App Developer
 - EJS (Embedded JavaScript)
 
 ## Hire App Developer
-### Features
-- Designed and developed an API using Node.js and Express framework.
+
+### Summary
+- Designed and developed the API using Node.js and Express.js for hiring app developers.
 - Implemented a company's algorithm to estimate the cost of hiring an app developer based on user inputs.
 
 ## App Cost Calculator
-### Features
-- Designed and developed the API using Node.js and Express framework.
-- Implemented a company's algorithm based on the Function Point Algorithm (FPA) to estimate the cost of developing an application.
-- Cost PDF Generation using EJS for detailed project cost reports.
-- Integrated a deep linking feature, allowing users to access specific content or pages directly from various external sources, enhancing the user experience.
-- Implemented dynamic theme matching, providing users arriving from different company websites with a consistent theme matching the source website's.
+
+### Summary
+- Designed and developed the API using Node.js and Express.js for estimating the cost of developing mobile applications.
+- Implemented a company's algorithm based on the Function Point Algorithm (FPA) to estimate the cost of application development.
+- Cost PDF generation using EJS for creating detailed cost estimation reports.
+- Integrated deep linking feature, allowing users to access specific content or pages directly from various external sources, enhancing the user experience.
+- Implemented dynamic theme matching, providing users arriving from different company websites with a consistent theme matching the source website's branding.
+- Integrated various services:
+   - IP Stack for obtaining IP addresses.
+   - SendGrid for sending email notifications.
+   - Twilio for sending WhatsApp notifications.
+   - TextLocal for sending text SMS notifications.
 
 ## Installation
-To run CloudXperte locally, follow these steps:
+To run this application locally, follow these steps:
 
 1. Clone the repository:
    ```
@@ -62,7 +69,7 @@ To run CloudXperte locally, follow these steps:
    ```
 
 ## Usage
-To use CloudXperte, visit the following URL: [Mobile App Development Cost Calculator](https://mobileappdevelopmentcost.com/)
+Access the CloudXperte App Development Cost Estimator via the following URL: [mobileappdevelopmentcost.com](https://mobileappdevelopmentcost.com/).
 
 <!-- ## API Documentation
 For detailed API documentation and usage examples, please refer to the [API Documentation](api-documentation.md) file in the project repository.
